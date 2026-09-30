@@ -9,6 +9,12 @@ function renderPhoto(photo){
   return `<figure class="session-photo"><a href="./assets/${photo.file}" target="_blank" rel="noopener" aria-label="사진 크게 보기: ${photo.caption}"><img src="./assets/${photo.file}" alt="${photo.alt}" loading="lazy"></a><figcaption>${photo.caption}</figcaption></figure>`;
 }
 
+function renderFieldNotes(session){
+  const notes=fieldNotesBySession[session.id];
+  if(!notes)return "";
+  return `<section class="field-notes" aria-label="현장 메모 보강"><h4>현장 메모에서 보강한 내용</h4><ul>${notes.map((note)=>`<li>${note}</li>`).join("")}</ul></section>`;
+}
+
 function renderSessions(){
   const selected=filter.value;
   const shown=sessions.filter((session)=>selected==="all"||session.category===selected);
@@ -17,7 +23,7 @@ function renderSessions(){
     <div class="session-card"><div class="session-meta"><span class="category ${session.category}">${labels[session.category]}</span><span>${session.type}</span><span>SESSION ${String(sessions.indexOf(session)+1).padStart(2,"0")}</span></div>
       <h3>${session.title}</h3><p class="subtitle">${session.subtitle}</p><p class="summary">${session.summary}</p>
       ${renderPhoto(photosBySession[session.id][0])}
-      <details><summary>핵심 내용과 사진 펼치기 <span aria-hidden="true">＋</span></summary><div class="details-content"><ul>${session.points.map((point)=>`<li>${point}</li>`).join("")}</ul><div class="question"><span>정리하며 남긴 질문</span><p>${session.question}</p></div>${photosBySession[session.id].length>1?`<div class="more-photos">${photosBySession[session.id].slice(1).map(renderPhoto).join("")}</div>`:""}</div></details>
+      <details><summary>${fieldNotesBySession[session.id]?"핵심 내용·현장 메모·사진 펼치기":"핵심 내용과 사진 펼치기"} <span aria-hidden="true">＋</span></summary><div class="details-content"><ul>${session.points.map((point)=>`<li>${point}</li>`).join("")}</ul>${renderFieldNotes(session)}<div class="question"><span>정리하며 남긴 질문</span><p>${session.question}</p></div>${photosBySession[session.id].length>1?`<div class="more-photos">${photosBySession[session.id].slice(1).map(renderPhoto).join("")}</div>`:""}</div></details>
     </div>
   </article>`).join("");
   if(!shown.length)sessionList.innerHTML='<p class="empty">해당 주제의 세션이 없습니다.</p>';
