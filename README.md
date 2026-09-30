@@ -1,6 +1,6 @@
 # Lablup 현장 노트
 
-2026년 9월 29일 Lablup 관련 강연 10개를 정리한 정적 웹페이지입니다. Plaud 녹음은 9개이며, 13시 녹음에 포함된 두 강연을 분리했습니다. GitHub Pages에서 main 브랜치의 루트 디렉터리를 배포 대상으로 지정하면 됩니다.
+2026년 9월 29일 Lablup 관련 강연 10개를 정리한 정적 웹페이지입니다. Plaud 녹음은 9개이며, 13시 녹음에 포함된 두 강연을 분리했습니다. [GitHub Pages에서 현장 노트 보기](https://kep-yang-mi.github.io/lablup_conf/)
 
 ## 구성
 
