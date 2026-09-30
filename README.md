@@ -2,6 +2,14 @@
 
 2026년 9월 29일 Lablup 관련 강연 10개를 정리한 정적 웹페이지입니다. Plaud 녹음은 9개이며, 13시 녹음에 포함된 두 강연을 분리했습니다. [GitHub Pages에서 현장 노트 보기](https://kep-yang-mi.github.io/lablup_conf/)
 
+## 100초 요약 영상
+
+[![Lablup 컨퍼런스 10개 강연의 100초 요약 영상 재생](assets/recap-poster.jpg)](https://kep-yang-mi.github.io/lablup_conf/#video)
+
+[▶ 영상 재생](https://kep-yang-mi.github.io/lablup_conf/#video) · [MP4 파일](assets/lablup_conf_100s.mp4) · [한국어 자막](assets/lablup_conf_100s.vtt)
+
+강연 순서대로 현장 사진과 핵심 내용을 엮었습니다. 한국어 합성 내레이션과 자막이 포함되어 있습니다.
+
 ## 구성
 
 - 100초 요약 영상: `assets/lablup_conf_100s.mp4` (한국어 합성 내레이션·자막 포함)
