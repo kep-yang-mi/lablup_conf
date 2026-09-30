@@ -4,6 +4,9 @@
 
 ## 구성
 
+- 100초 요약 영상: `assets/lablup_conf_100s.mp4` (한국어 합성 내레이션·자막 포함)
+- 웹 자막: `assets/lablup_conf_100s.vtt`
+
 - index.html: 페이지 구조와 메타데이터
 - sessions.js: 세션별 요약과 핵심 내용
 - app.js: 주제 필터 및 상세 펼치기
