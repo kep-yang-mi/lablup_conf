@@ -6,14 +6,14 @@
 
 [![Lablup 컨퍼런스 10개 강연의 100초 요약 영상 재생](assets/recap-poster.jpg)](https://kep-yang-mi.github.io/lablup_conf/#video)
 
-[▶ 영상 재생](https://kep-yang-mi.github.io/lablup_conf/#video) · [MP4 파일](assets/lablup_conf_100s.mp4) · [한국어 자막](assets/lablup_conf_100s.vtt)
+[▶ 영상 재생](https://kep-yang-mi.github.io/lablup_conf/#video) · [MP4 파일](assets/lablup_conf_100s.mp4)
 
-강연 순서대로 현장 사진과 핵심 내용을 엮었습니다. 한국어 합성 내레이션과 자막이 포함되어 있습니다.
+강연 순서대로 발표 장표와 핵심 문장을 엮은 모션그래픽입니다. 나레이션과 자막 없이 음악과 화면의 글자로 구성했습니다. 영상 속 장표는 현장 사진에서 화면 부분만 잘라 정면으로 편 것이고, 코드 리뷰 강연은 장표 대신 핵심 문장으로 정리했습니다.
 
 ## 구성
 
-- 100초 요약 영상: `assets/lablup_conf_100s.mp4` (한국어 합성 내레이션·자막 포함)
-- 웹 자막: `assets/lablup_conf_100s.vtt`
+- 100초 요약 영상: `assets/lablup_conf_100s.mp4` (1920×1080 · 60fps · 나레이션 없음)
+- 영상 포스터: `assets/recap-poster.jpg`
 
 - index.html: 페이지 구조와 메타데이터
 - sessions.js: 세션별 요약과 핵심 내용
